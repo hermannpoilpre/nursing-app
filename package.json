@@ -1,0 +1,12 @@
+{
+  "name": "nursing-app",
+  "description": "Application pour les infirmières libérales",
+  "author": "Hermann POILPRE",
+  "version": "0.0.1",
+  "devDependencies": {
+    "jshint": "^2.8.0"
+  },
+  "scripts": {
+    "test": "./node_modules/jshint/bin/jshint main.js"
+  }
+}
