@@ -8,5 +8,9 @@
   },
   "scripts": {
     "test": "./node_modules/jshint/bin/jshint main.js"
+  },
+  "dependencies": {
+    "bower": "^1.5.2",
+    "express": "^4.13.3"
   }
 }
