@@ -4,7 +4,9 @@
   "author": "Hermann POILPRE",
   "version": "0.0.1",
   "devDependencies": {
-    "jshint": "^2.8.0"
+    "jshint": "^2.8.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.11.0"
   },
   "scripts": {
     "test": "./node_modules/jshint/bin/jshint main.js"
