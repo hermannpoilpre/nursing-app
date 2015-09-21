@@ -4,7 +4,7 @@ var morgan = require('morgan');
 var app = express();
 var config = require('./config');
 
-var port = process.env.PORT || 1338;
+var port = process.env.PORT || 8080;
 app.set('superSecret', config.secret);
 
 app.use(express.static("./public"));
