@@ -1,8 +1,8 @@
 module.exports = {
-  context: __dirname + '/app',
+  context: __dirname + '/public/app',
   entry: './nursing-app.js',
   output: {
-    path: __dirname + '/app',
+    path: __dirname + '/public/app',
     filename: 'bundle.js'
   }
 }
