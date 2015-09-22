@@ -1,7 +1,6 @@
 angular.module('sidebar', [])
     .controller('SidebarCtrl', function SidebarCtrl(){
-        var sidebarCtrl = this;
-        sidebarCtrl.menu = [
+        this.menu = [
           {
             text:"Dashboard",
             icon:"menu/ic_dashboard",

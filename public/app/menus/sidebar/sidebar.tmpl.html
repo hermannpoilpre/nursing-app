@@ -1,4 +1,4 @@
-<div class="sidebar-nav">
+<div class="sidebar-nav" data-ng-controller="SidebarCtrl as sidebarCtrl">
       <div class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
@@ -10,15 +10,19 @@
           <span class="visible-xs navbar-brand">Sidebar menu</span>
         </div>
         <div class="navbar-collapse collapse sidebar-navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li ng-repeat="item0 in menu">
-              {{item0.text}}
-              <li ng-if="item0.children.length > 0" ng-repeat="item1 in item0">
-                {{item1.text}}
-                <li ng-if="item1.children.length > 0" ng-repeat="item2 in item1">
-                  {{item2.text}}
+          <ul class="nav">
+            <li ng-repeat="item0 in sidebarCtrl.menu">
+              <a href="#" ng-click="isCollapsed = !isCollapsed">{{item0.text}}</a>
+              <ul ng-if="item0.children.length > 0" collapse="isCollapsed">
+                <li ng-repeat="item1 in item0.children" >
+                  {{item1.text}}
+                  <ul ng-if="item1.children.length > 0">
+                    <li ng-repeat="item2 in item1.children" ng-if="item1.children.length > 0" >
+                      {{item2.text}}
+                    </li>
+                  </ul>
                 </li>
-              </li>
+              </ul>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
