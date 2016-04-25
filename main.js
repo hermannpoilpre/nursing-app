@@ -10,8 +10,8 @@ app.set('superSecret', config.secret);
 app.use(morgan('dev'));
 
 app.get("/", function(req, res) {
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end('Welcome!');
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Welcome!');
 });
 
 app.get("/auth", function(req, res) {
