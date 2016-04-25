@@ -1,22 +1,10 @@
 {
-  "name": "nursing-app",
-  "description": "Application pour les infirmières libérales",
+  "name": "test",
+  "description": "test",
   "author": "Hermann POILPRE",
   "version": "0.0.1",
-  "devDependencies": {
-    "jshint": "^2.8.0",
-    "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.11.0"
-  },
-  "scripts": {
-    "test": "./node_modules/jshint/bin/jshint main.js",
-    "start": "./node_modules/.bin/webpack-dev-server --content-base public/app",
-    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp public/app/index.html public/dist/index.html"
-  },
   "dependencies": {
-    "bower": "^1.5.2",
     "express": "^4.13.3",
-    "morgan": "^1.6.1",
-    "webpack": "^1.12.2"
+    "morgan": "^1.6.1"
   }
 }

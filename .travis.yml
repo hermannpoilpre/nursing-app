@@ -5,6 +5,6 @@ deploy:
   provider: heroku
   api_key:
     secure: nb9M/KMZGR62qfFcx6nQiZ8l1y/RkvsC3xj+0+4iojIN/JFJRZ2LIT9YwYE4wteBseoWl1wPiCUETFhUyJ8dttN2On6d7kkNmkq2c4VFpvQmEj2bfVVRBWLZtTTm8lQ29kjrbFyMpLLGu5HglUQSCrjj3mZGYUgkYuXDUjmItdMqEKySYDRS6LtVgrVYptAcf7OBH0STBgnDRNGXFW4rwHk88EQC25A5xzsNkONwnevSd3s+P0oL5bQ4/bfy5U9CfOiLzeJAtS6O2QRcowxlGsRs3qpCZ6tKN37pQOL7NWGq68uF+Nvb0kZkeiCk4XOXXcAgVCvacIXyR/uIOxkHzY9QqOE4gTYXW+DJPcwmVSQqcVD0MJim3erQjpbPMrPZpBulYjEFDhkW8q0WqHJ0Ow2EYWw5kXUDmW3wnAE/bq0CeKMuO5AjpUEGhuiqte51W6RAvsqUhC2AOpvgkJlWp1QH/XokyIkloDG/QC9xTPNXbrOsQ8mcdkvDKh1R8x75IGF01ZnovOiZDNaQbXMM0oL9F6ftTqjPq1e1PxB5m+IZeshin1IE/gy8E4ZfZ14QtcaPKjfUC42LWXBL4QV/SSFoBXC0PO41y25LZQZQGrfrGHARZywJdGP5IeVSKS1suf1uPRPbNpiw2K0ITUVPaBN3zehF7f6AaXyAIVXguRE=
-  app: app-nursing
+  app: linxo
   on:
-    repo: hermannpoilpre/test-app
+    repo: hermannpoilpre/linxo

@@ -7,11 +7,17 @@ var config = require('./config');
 var port = process.env.PORT || 8080;
 app.set('superSecret', config.secret);
 
-app.use(express.static("./public"));
 app.use(morgan('dev'));
 
-app.get("/app", function(req, res) {
-    res.sendFile("public/index.html", { root: __dirname });
+app.get("/auth", function(req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    
+    var result = {
+        firstname: 'Elliot',
+        lastname: 'Smith'
+    };
+
+    res.send(JSON.stringify(result));
 });
 
 app.listen(port);
