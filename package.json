@@ -1,10 +1,23 @@
 {
-  "name": "test",
-  "description": "test",
-  "author": "Hermann POILPRE",
-  "version": "0.0.1",
+  "name": "oxnil",
+  "version": "1.0.0",
+  "description": "Ceci est un prototype",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hermannpoilpre/oxnil.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hermannpoilpre/oxnil/issues"
+  },
+  "homepage": "https://github.com/hermannpoilpre/oxnil#readme",
   "dependencies": {
-    "express": "^4.13.3",
-    "morgan": "^1.6.1"
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
   }
 }
