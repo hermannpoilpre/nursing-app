@@ -4,7 +4,7 @@
   "description": "Ceci est un prototype",
   "main": "main.js",
   "scripts": {
-
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
