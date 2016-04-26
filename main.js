@@ -15,7 +15,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/auth", function(req, res) {
-    res.setHeader(200, 'Content-Type', 'application/json');
+    res.setHeader('Content-Type', 'application/json');
     var result = {
         firstname: 'Elliot',
         lastname: 'Smith'
