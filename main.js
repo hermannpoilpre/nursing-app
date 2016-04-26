@@ -1,4 +1,5 @@
 var express = require('express');
+var compress = require('compression');
 var morgan = require('morgan');
 
 var app = express();
@@ -8,6 +9,7 @@ var port = process.env.PORT || 80;
 app.set('superSecret', config.secret);
 
 app.use(morgan('dev'));
+app.use(compress());
 
 app.get("/", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});

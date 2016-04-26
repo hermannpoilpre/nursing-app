@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hermannpoilpre/oxnil#readme",
   "dependencies": {
+    "compression": "^1.6.1",
     "express": "^4.13.4",
     "morgan": "^1.7.0"
   }
