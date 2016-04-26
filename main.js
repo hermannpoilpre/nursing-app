@@ -14,11 +14,25 @@ app.get("/", function(req, res) {
     res.end('Welcome!');
 });
 
+app.get("/check-email", function(req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    var result = true;
+    res.send(JSON.stringify(result));
+});
+
 app.get("/auth", function(req, res) {
     res.setHeader('Content-Type', 'application/json');
     var result = {
         firstname: 'Elliot',
         lastname: 'Smith'
+    };
+    res.send(JSON.stringify(result));
+});
+
+app.get("/get-accounts", function(req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    var result = {
+
     };
     res.send(JSON.stringify(result));
 });
